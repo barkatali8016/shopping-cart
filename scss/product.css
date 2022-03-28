@@ -4,6 +4,7 @@
   -ms-grid-columns: 20fr 80fr;
       grid-template-columns: 20fr 80fr;
   gap: 1rem;
+  min-height: 73rem;
 }
 
 .side-bar {

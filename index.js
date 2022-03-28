@@ -9,9 +9,14 @@ const categories = require("./server/categories/index.get.json");
 const products = require("./server/products/index.get.json");
 
 app.use(cors());
-app.get("/", (req, res) => {
-  res.send("Node JS ");
+app.use(express.static(__dirname));
+
+app.get("/", function (req, res) {
+  res.sendfile("index.html");
 });
+// app.get("/", (req, res) => {
+//   res.send("Node JS ");
+// });
 
 app.get("/categories", (req, res) => {
   res.json(categories);
