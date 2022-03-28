@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="stylesheet" href="./scss/register.css" />
+    <title>Shopping Cart &mdash; Home</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <header id="main-header" class="header">
+      <div class="main-nav container">
+        <div class="left-nav">
+          <a href="#" class="logo">
+            <img src="./static/images/logo_2x.png" alt="logo" />
+          </a>
+          <nav>
+            <ul class="links">
+              <li><a class="link" href="index.html">Home</a></li>
+              <li><a class="link" href="product.html">Product</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="right-nav">
+          <ul class="links">
+            <li><a class="link" href="login.html">SignIn</a></li>
+            <li><a class="link" href="register.html">Register</a></li>
+          </ul>
+          <button class="btn cart-btn">
+            <div class="cart-icon" role="img" aria-label="Cart Imgage"></div>
+            <span>0</span>Items
+          </button>
+        </div>
+      </div>
+
+      <div class="cart-modal-holder">
+        <div class="cart-modal">
+          <section class="cart-header">
+            <h2 class="header-secondary">
+              My Cart <span class="text-light">(1 item )</span>
+            </h2>
+            <button class="btn btn-close">
+              <ion-icon class="close-icon" name="close-outline"></ion-icon>
+            </button>
+          </section>
+          <section class="cart-body">
+            <div class="cart-item">
+              <img
+                src="./static/images/products/fruit-n-veg/apple.jpg"
+                alt="Carted item details"
+                class="cart-img"
+              />
+              <div class="cart-item-details">
+                <p class="item-name">Apple - Washington, Regular, 4 pcs</p>
+                <div class="cart-item-btn">
+                  <button class="btn btn-minus">&minus;</button>
+                  <p class="no-of-item">1</p>
+                  <button class="btn btn-minus">&plus;</button>
+                  <p class="price-per-item">X &nbsp; Rs. <span>187</span></p>
+                </div>
+              </div>
+              <p class="cart-item-price">Rs. <span>187</span></p>
+            </div>
+            <div class="cart-item">
+              <img
+                src="./static/images/products/fruit-n-veg/apple.jpg"
+                alt="Carted item details"
+                class="cart-img"
+              />
+              <div class="cart-item-details">
+                <p class="item-name">Apple - Washington, Regular, 4 pcs</p>
+                <div class="cart-item-btn">
+                  <button class="btn btn-minus">&minus;</button>
+                  <p class="no-of-item">1</p>
+                  <button class="btn btn-minus">&plus;</button>
+                  <p class="price-per-item">X &nbsp; Rs. <span>187</span></p>
+                </div>
+              </div>
+              <p class="cart-item-price">Rs. <span>187</span></p>
+            </div>
+            <div class="cart-ads">
+              <img
+                src="./static/images/lowest-price.png"
+                alt="Ads lowest price"
+                class="ads-img"
+              />
+              <p class="ads-text">You won't find it cheaper anywhere</p>
+            </div>
+          </section>
+          <section class="cart-footer">
+            <div class="cart-footer-content">
+              <p>Promo code can be applied on payment page</p>
+              <a href="#" class="link checkout-link">
+                <span>Proceed to Checkout</span>
+                <span>Rs. 187 &nbsp; &gt;</span></a
+              >
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container sign-section">
+        <div class="signup-text-section">
+          <h2 class="heading-secondary signup-heading">Login</h2>
+          <p class="signup-text">
+            Get access to your Order, Wishlist and Recommendations
+          </p>
+        </div>
+        <div class="signup-form-section">
+          <form class="signup-form">
+            <div class="form-field">
+              <input type="email" name="email" id="email" placeholder="Email" />
+              <label for="email">Email</label>
+            </div>
+            <div class="form-field">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+              <label for="password">Password</label>
+            </div>
+            <button type="button" class="btn signup-btn">Login</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright &copy; 2011-2018 Sabka Bazaar Grocery Supplies Pvt Ltd</p>
+      </div>
+    </footer>
+  </body>
+</html>

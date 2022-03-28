@@ -1,0 +1,149 @@
+.sign-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+  min-height: 73.5rem;
+  padding: 3.2rem;
+}
+
+.signup-heading {
+  margin: 3.2rem 0;
+  font-size: 3.2rem;
+}
+
+.signup-text {
+  color: #191919;
+  line-height: 1.8rem;
+}
+
+.signup-form-section {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+}
+
+.signup-form-section .signup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+}
+
+.form-field {
+  position: relative;
+}
+
+input {
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  border: 0;
+  border-radius: 0;
+  padding: 1.8rem 0;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  width: 100%;
+  cursor: text;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #fff !important;
+}
+
+input::-webkit-input-placeholder {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+input:-ms-input-placeholder {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+input::-ms-input-placeholder {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+input::placeholder {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+label {
+  position: absolute;
+  top: 18.5px;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: text;
+}
+
+input:focus {
+  border-bottom: 2px solid #50d9e2;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  -webkit-transform: translateY(-2.6rem);
+          transform: translateY(-2.6rem);
+  color: #50d9e2;
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.signup-btn {
+  background-color: #bf2957;
+  color: #fff;
+  padding: 1.8rem;
+  margin: 2.4rem 0;
+  font-size: 1.8rem;
+}
+
+.signup-btn:active,
+.signup-btn:hover {
+  background-color: #ac254e;
+  outline: 1px solid #ac254e;
+}
+
+/*==================================================
+ *  MEDIA QUERY SCREEN 560PX
+ font-size 9px => 9px /16px =56.25%
+ * ===============================================*/
+@media (max-width: 43em) {
+  .sign-section {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=register.css.map */

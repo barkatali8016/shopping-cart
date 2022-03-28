@@ -1,0 +1,104 @@
+.sign-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  margin-top: 5.6rem;
+  margin-bottom: 5.6rem;
+  min-height: 73.5rem;
+  padding: 3.2rem;
+}
+.signup-heading {
+  margin: 3.2rem 0;
+  font-size: 3.2rem;
+}
+.signup-text {
+  color: #191919;
+  line-height: 1.8rem;
+}
+.signup-form-section {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}
+.form-field {
+  position: relative;
+}
+input {
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  border: 0;
+  // border: 1px solid green;
+  border-radius: 0;
+  padding: 1.8rem 0;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  width: 100%;
+  cursor: text;
+  transition: all 0.3s ease;
+  background-color: #fff !important;
+}
+input::placeholder {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+label {
+  position: absolute;
+  top: 18.5px;
+  left: 0;
+  transition: all 0.3s ease;
+  cursor: text;
+}
+input:focus {
+  border-bottom: 2px solid #50d9e2;
+}
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  transform: translateY(-2.6rem);
+  color: #50d9e2;
+}
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+.signup-btn {
+  background-color: #bf2957;
+  color: #fff;
+  padding: 1.8rem;
+  margin: 2.4rem 0;
+  font-size: 1.8rem;
+  // border-radius: 5px;
+}
+.signup-btn:active,
+.signup-btn:hover {
+  background-color: #ac254e;
+  outline: 1px solid #ac254e;
+}
+// input:focus::placeholder {
+// display: none;
+// visibility: visible;
+// opacity: 1;
+// pointer-events: none;
+// }
+
+/*==================================================
+ *  MEDIA QUERY SCREEN 560PX
+ font-size 9px => 9px /16px =56.25%
+ * ===============================================*/
+@media (max-width: 43em) {
+  .sign-section {
+    grid-template-columns: 1fr;
+  }
+}

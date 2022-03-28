@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="stylesheet" href="./scss/home.css" />
+    <title>Shopping Cart &mdash; Home</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <header id="main-header" class="header">
+      <div class="main-nav container">
+        <div class="left-nav">
+          <a href="#" class="logo">
+            <img src="./static/images/logo_2x.png" alt="logo" />
+          </a>
+          <nav>
+            <ul class="links">
+              <li><a class="link" href="index.html">Home</a></li>
+              <li><a class="link" href="product.html">Product</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="right-nav">
+          <ul class="links">
+            <li><a class="link" href="login.html">SignIn</a></li>
+            <li><a class="link" href="register.html">Register</a></li>
+          </ul>
+          <button class="btn cart-btn">
+            <div class="cart-icon" role="img" aria-label="Cart Imgage"></div>
+            <span>0</span>Items
+          </button>
+        </div>
+      </div>
+
+      <div class="cart-modal-holder">
+        <div class="cart-modal">
+          <section class="cart-header">
+            <h2 class="header-secondary">
+              My Cart <span class="text-light">(1 item )</span>
+            </h2>
+            <button class="btn btn-close">
+              <ion-icon class="close-icon" name="close-outline"></ion-icon>
+            </button>
+          </section>
+          <section class="cart-body">
+            <div class="cart-item">
+              <img
+                src="./static/images/products/fruit-n-veg/apple.jpg"
+                alt="Carted item details"
+                class="cart-img"
+              />
+              <div class="cart-item-details">
+                <p class="item-name">Apple - Washington, Regular, 4 pcs</p>
+                <div class="cart-item-btn">
+                  <button class="btn btn-minus">&minus;</button>
+                  <p class="no-of-item">1</p>
+                  <button class="btn btn-minus">&plus;</button>
+                  <p class="price-per-item">X &nbsp; Rs. <span>187</span></p>
+                </div>
+              </div>
+              <p class="cart-item-price">Rs. <span>187</span></p>
+            </div>
+            <div class="cart-item">
+              <img
+                src="./static/images/products/fruit-n-veg/apple.jpg"
+                alt="Carted item details"
+                class="cart-img"
+              />
+              <div class="cart-item-details">
+                <p class="item-name">Apple - Washington, Regular, 4 pcs</p>
+                <div class="cart-item-btn">
+                  <button class="btn btn-minus">&minus;</button>
+                  <p class="no-of-item">1</p>
+                  <button class="btn btn-minus">&plus;</button>
+                  <p class="price-per-item">X &nbsp; Rs. <span>187</span></p>
+                </div>
+              </div>
+              <p class="cart-item-price">Rs. <span>187</span></p>
+            </div>
+            <div class="cart-ads">
+              <img
+                src="./static/images/lowest-price.png"
+                alt="Ads lowest price"
+                class="ads-img"
+              />
+              <p class="ads-text">You won't find it cheaper anywhere</p>
+            </div>
+          </section>
+          <section class="cart-footer">
+            <div class="cart-footer-content">
+              <p>Promo code can be applied on payment page</p>
+              <a href="#" class="link checkout-link">
+                <span>Proceed to Checkout</span>
+                <span>Rs. 187 &nbsp; &gt;</span></a
+              >
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-slider">
+        <div class="container slider-container">
+          <!-- <div class="slider effect6">
+            <div class="offer-image-box">
+              <img src="./static/images/offers/offer1.jpg" alt="Offer Image" />
+            </div>
+            <button
+              onclick="plusSlides(-1)"
+              class="btn slider-btn-left"
+              type="button"
+            >
+              PREV
+            </button>
+            <button
+              onclick="plusSlides(1)"
+              class="btn slider-btn-right"
+              type="button"
+            >
+              NEXT
+            </button>
+            <div class="offer-image-dots">
+              <a onclick="currentSlide(1)" class="image-dot active"></a>
+              <a onclick="currentSlide(2)" class="image-dot"></a>
+              <a onclick="currentSlide(3)" class="image-dot"></a>
+              <a onclick="currentSlide(4)" class="image-dot"></a>
+              <a onclick="currentSlide(5)" class="image-dot"></a>
+            </div>
+          </div>
+          <div class="slider effect6">
+            <div class="offer-image-box">
+              <img src="./static/images/offers/offer2.jpg" alt="Offer Image" />
+            </div>
+            <button
+              onclick="plusSlides(-1)"
+              class="btn slider-btn-left"
+              type="button"
+            >
+              PREV
+            </button>
+            <button
+              onclick="plusSlides(1)"
+              class="btn slider-btn-right"
+              type="button"
+            >
+              NEXT
+            </button>
+            <div class="offer-image-dots">
+              <a onclick="currentSlide(1)" class="image-dot"></a>
+              <a onclick="currentSlide(2)" class="image-dot active"></a>
+              <a onclick="currentSlide(3)" class="image-dot"></a>
+              <a onclick="currentSlide(4)" class="image-dot"></a>
+              <a onclick="currentSlide(5)" class="image-dot"></a>
+            </div>
+          </div>
+          <div class="slider effect6">
+            <div class="offer-image-box">
+              <img src="./static/images/offers/offer3.jpg" alt="Offer Image" />
+            </div>
+            <button
+              onclick="plusSlides(-1)"
+              class="btn slider-btn-left"
+              type="button"
+            >
+              PREV
+            </button>
+            <button
+              onclick="plusSlides(1)"
+              class="btn slider-btn-right"
+              type="button"
+            >
+              NEXT
+            </button>
+            <div class="offer-image-dots">
+              <a onclick="currentSlide(1)" class="image-dot"></a>
+              <a onclick="currentSlide(2)" class="image-dot"></a>
+              <a onclick="currentSlide(3)" class="image-dot active"></a>
+              <a onclick="currentSlide(4)" class="image-dot"></a>
+              <a onclick="currentSlide(5)" class="image-dot"></a>
+            </div>
+          </div>
+          <div class="slider effect6">
+            <div class="offer-image-box">
+              <img src="./static/images/offers/offer4.jpg" alt="Offer Image" />
+            </div>
+            <button
+              onclick="plusSlides(-1)"
+              class="btn slider-btn-left"
+              type="button"
+            >
+              PREV
+            </button>
+            <button
+              onclick="plusSlides(1)"
+              class="btn slider-btn-right"
+              type="button"
+            >
+              NEXT
+            </button>
+            <div class="offer-image-dots">
+              <a onclick="currentSlide(1)" class="image-dot"></a>
+              <a onclick="currentSlide(2)" class="image-dot"></a>
+              <a onclick="currentSlide(3)" class="image-dot"></a>
+              <a onclick="currentSlide(4)" class="image-dot active"></a>
+              <a onclick="currentSlide(5)" class="image-dot"></a>
+            </div>
+          </div>
+          <div class="slider effect6">
+            <div class="offer-image-box">
+              <img src="./static/images/offers/offer5.jpg" alt="Offer Image" />
+            </div>
+            <button
+              onclick="plusSlides(-1)"
+              class="btn slider-btn-left"
+              type="button"
+            >
+              PREV
+            </button>
+            <button
+              onclick="plusSlides(1)"
+              class="btn slider-btn-right"
+              type="button"
+            >
+              NEXT
+            </button>
+            <div class="offer-image-dots">
+              <a onclick="currentSlide(1)" class="image-dot"></a>
+              <a onclick="currentSlide(2)" class="image-dot"></a>
+              <a onclick="currentSlide(3)" class="image-dot"></a>
+              <a onclick="currentSlide(4)" class="image-dot"></a>
+              <a onclick="currentSlide(5)" class="image-dot active"></a>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <section class="section-category">
+        <div class="container effect6 bg-white">
+          <div class="category grid grid--40-60-cols">
+            <div class="category-img">
+              <img
+                src="./static/images/category/fruits.png"
+                alt="Category Image fruits"
+              />
+            </div>
+            <div class="category-text-box">
+              <h3 class="heading-tertiary">Fruits &amp; Vegetables</h3>
+              <p class="category-text">
+                A variety of fresh fruits and vegetables
+              </p>
+              <a href="#" class="btn-category">Explore fruits-and-veg</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-category">
+        <div class="container effect6 bg-white">
+          <div class="category grid grid--60-40-cols">
+            <div class="category-text-box">
+              <h3 class="heading-tertiary">Bakery Cakes and Dairy</h3>
+              <p class="category-text">
+                The best cupcakes, cookies, cakes, pies, cheesecakes, fresh
+                bread, biscotti, muffins, bagels, fresh coffee, milk and more.
+              </p>
+              <a href="#" class="btn-category">Explore bakery-cakes-dairy</a>
+            </div>
+            <div class="category-img">
+              <img
+                src="./static/images/category/bakery.png"
+                alt="Category Image fruits"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-category">
+        <div class="container effect6 bg-white">
+          <div class="category grid grid--40-60-cols">
+            <div class="category-img">
+              <img
+                src="./static/images/category/beverages.png"
+                alt="Category Image fruits"
+              />
+            </div>
+            <div class="category-text-box">
+              <h3 class="heading-tertiary">Beverages</h3>
+              <p class="category-text">
+                Our beverage department will ensure your fridge is always fully
+                stocked. Shop for soda, juice, beer and more.
+              </p>
+              <a href="#" class="btn-category">Explore beverages</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-category">
+        <div class="container effect6 bg-white">
+          <div class="category grid grid--60-40-cols">
+            <div class="category-text-box">
+              <h3 class="heading-tertiary">Beauty and Hygiene</h3>
+              <p class="category-text">
+                Buy beauty and personal care products online in India at best
+                prices.
+              </p>
+              <a href="#" class="btn-category">Explore beauty-hygiene</a>
+            </div>
+            <div class="category-img">
+              <img
+                src="./static/images/category/beauty.png"
+                alt="Category Image fruits"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-category">
+        <div class="container effect6 bg-white">
+          <div class="category grid grid--40-60-cols">
+            <div class="category-img">
+              <img
+                src="./static/images/category/baby.png"
+                alt="Category Image fruits"
+              />
+            </div>
+            <div class="category-text-box">
+              <h3 class="heading-tertiary">Baby Care</h3>
+              <p class="category-text">
+                Shop online for Baby Products, Diapers, Skin Care Products,etc.
+              </p>
+              <a href="#" class="btn-category">Explore baby</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright &copy; 2011-2018 Sabka Bazaar Grocery Supplies Pvt Ltd</p>
+      </div>
+    </footer>
+  </body>
+</html>

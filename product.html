@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="stylesheet" href="./scss/product.css" />
+    <title>Shopping Cart &mdash; Home</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/product.js"></script>
+  </head>
+  <body>
+    <header id="main-header" class="header">
+      <div class="main-nav container">
+        <div class="left-nav">
+          <a href="#" class="logo">
+            <img src="./static/images/logo_2x.png" alt="logo" />
+          </a>
+          <nav>
+            <ul class="links">
+              <li><a class="link" href="index.html">Home</a></li>
+              <li><a class="link" href="product.html">Product</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="right-nav">
+          <ul class="links">
+            <li><a class="link" href="login.html">SignIn</a></li>
+            <li><a class="link" href="register.html">Register</a></li>
+          </ul>
+          <button class="btn cart-btn">
+            <div class="cart-icon" role="img" aria-label="Cart Imgage"></div>
+            <span>0</span>Items
+          </button>
+        </div>
+      </div>
+
+      <div class="cart-modal-holder">
+        <div class="cart-modal">
+          <section class="cart-header">
+            <h2 class="header-secondary">
+              My Cart <span class="text-light">(1 item )</span>
+            </h2>
+            <button class="btn btn-close">
+              <ion-icon class="close-icon" name="close-outline"></ion-icon>
+            </button>
+          </section>
+          <section class="cart-body">
+            <div class="cart-item">
+              <img
+                src="./static/images/products/fruit-n-veg/apple.jpg"
+                alt="Carted item details"
+                class="cart-img"
+              />
+              <div class="cart-item-details">
+                <p class="item-name">Apple - Washington, Regular, 4 pcs</p>
+                <div class="cart-item-btn">
+                  <button class="btn btn-minus">&minus;</button>
+                  <p class="no-of-item">1</p>
+                  <button class="btn btn-minus">&plus;</button>
+                  <p class="price-per-item">X &nbsp; Rs. <span>187</span></p>
+                </div>
+              </div>
+              <p class="cart-item-price">Rs. <span>187</span></p>
+            </div>
+            <div class="cart-item">
+              <img
+                src="./static/images/products/fruit-n-veg/apple.jpg"
+                alt="Carted item details"
+                class="cart-img"
+              />
+              <div class="cart-item-details">
+                <p class="item-name">Apple - Washington, Regular, 4 pcs</p>
+                <div class="cart-item-btn">
+                  <button class="btn btn-minus">&minus;</button>
+                  <p class="no-of-item">1</p>
+                  <button class="btn btn-minus">&plus;</button>
+                  <p class="price-per-item">X &nbsp; Rs. <span>187</span></p>
+                </div>
+              </div>
+              <p class="cart-item-price">Rs. <span>187</span></p>
+            </div>
+            <div class="cart-ads">
+              <img
+                src="./static/images/lowest-price.png"
+                alt="Ads lowest price"
+                class="ads-img"
+              />
+              <p class="ads-text">You won't find it cheaper anywhere</p>
+            </div>
+          </section>
+          <section class="cart-footer">
+            <div class="cart-footer-content">
+              <p>Promo code can be applied on payment page</p>
+              <a href="#" class="link checkout-link">
+                <span>Proceed to Checkout</span>
+                <span>Rs. 187 &nbsp; &gt;</span></a
+              >
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container product-grid">
+        <button class="sidebar-action-btn">
+          <span>Fruits & Vegetables</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="up-arrow"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 15l7-7 7 7"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="down-arrow"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </button>
+        <section class="product-list">
+          <!-- card start -->
+          <!-- <div class="product-card-item">
+            <h3 class="card-item-head-text">Fresho Kiwi - Green, 3 pcs</h3>
+            <img
+              class="cart-item-img"
+              src="./static/images/products/fruit-n-veg/kiwi-green.jpg"
+              alt="Product Image Apple"
+            />
+            <p class="product-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
+              debitis veritatis eos magni natus quibusdam!
+            </p>
+            <div class="product-action">
+              <p class="product-mrp">MRP Rs.88</p>
+              <button class="btn btn-buy-now">
+                Buy Now <span>@ Rs.88</span>
+              </button>
+            </div>
+          </div> -->
+          <!-- card end -->
+          <!-- card start -->
+          <!-- <div class="product-card-item">
+            <h3 class="card-item-head-text">
+              Apple - Washington, Regular, 4 pc
+            </h3>
+            <img
+              class="cart-item-img"
+              src="./static/images/products/fruit-n-veg/apple.jpg"
+              alt="Product Image Apple"
+            />
+            <p class="product-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
+              debitis veritatis eos magni natus quibusdam!
+            </p>
+            <div class="product-action">
+              <p class="product-mrp">MRP Rs.88</p>
+              <button class="btn btn-buy-now">
+                Buy Now <span>@ Rs.88</span>
+              </button>
+            </div>
+          </div> -->
+          <!-- card end -->
+          <!-- card start -->
+          <!-- <div class="product-card-item">
+            <h3 class="card-item-head-text">Tata Tea Gold Leaf Tea, 500 gm</h3>
+            <img
+              class="cart-item-img"
+              src="./static/images/products/beverages/tata-tea.jpg"
+              alt="Product Image Apple"
+            />
+            <p class="product-description">
+              consectetur adipisicing elit. Dolores, debitis veritatis eos magni
+              natus quibusdam!
+            </p>
+            <div class="product-action">
+              <p class="product-mrp">MRP Rs.88</p>
+              <button class="btn btn-buy-now">
+                Buy Now <span>@ Rs.88</span>
+              </button>
+            </div>
+          </div> -->
+          <!-- card end -->
+          <!-- card start -->
+          <!-- <div class="product-card-item">
+            <h3 class="card-item-head-text">Coca Cola Soft Drink. 2x1.75 L</h3>
+            <img
+              class="cart-item-img"
+              src="./static/images/products/beverages/coke.jpg"
+              alt="Product Image Apple"
+            />
+            <p class="product-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
+            </p>
+            <div class="product-action">
+              <p class="product-mrp">MRP Rs.120</p>
+              <button class="btn btn-buy-now">
+                Buy Now <span>@ Rs.88</span>
+              </button>
+            </div>
+          </div> -->
+        </section>
+        <aside class="side-bar">
+          <ul class="sideBarList">
+            <!-- <li class="side-nav-item active">
+              <a href="#">Fruits & Vegetables</a>
+            </li>
+            <li class="side-nav-item">
+              <a href="#">Bakery Cakes and Dairy</a>
+            </li>
+            <li class="side-nav-item"><a href="#">Beverages</a></li>
+            <li class="side-nav-item"><a href="#">Beauty and Hygiene</a></li>
+            <li class="side-nav-item"><a href="#">Baby Care</a></li> -->
+          </ul>
+        </aside>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright &copy; 2011-2018 Sabka Bazaar Grocery Supplies Pvt Ltd</p>
+      </div>
+    </footer>
+  </body>
+</html>
