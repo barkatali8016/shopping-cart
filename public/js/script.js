@@ -11,7 +11,7 @@ main();
 // to get banners
 let banners = [];
 function getBannerList() {
-  fetch("https://shopping-cart-barkat.netlify.app/banners")
+  fetch("http://localhost:5000/banners")
     .then((res) => res.json())
     .then((res) => {
       console.log(res);

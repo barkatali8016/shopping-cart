@@ -10,7 +10,7 @@ productPage();
 
 // to get categories
 function getCategoryList() {
-  fetch("https://shopping-cart-barkat.netlify.app/categories")
+  fetch("http://localhost:5000/categories")
     .then((res) => res.json())
     .then((res) => {
       let sideBarList = document.querySelector(".sideBarList");
@@ -32,7 +32,7 @@ getCategoryList();
 // to get product list
 let allProducts = [];
 function getProductList() {
-  fetch("https://shopping-cart-barkat.netlify.app/products")
+  fetch("http://localhost:5000/products")
     .then((res) => res.json())
     .then((res) => {
       allProducts = res;

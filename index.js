@@ -11,7 +11,7 @@ const products = require("./public/server/products/index.get.json");
 app.use(cors());
 
 // server your css as static
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/public/"));
 
 console.log("Server Started");
 
