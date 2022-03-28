@@ -3,16 +3,17 @@ const app = express();
 const port = process.env.PORT || 5000;
 const cors = require("cors");
 
-const cart = require("./server/addToCart/index.post.json");
-const banners = require("./server/banners/index.get.json");
-const categories = require("./server/categories/index.get.json");
-const products = require("./server/products/index.get.json");
+const cart = require("./public/server/addToCart/index.post.json");
+const banners = require("./public/server/banners/index.get.json");
+const categories = require("./public/server/categories/index.get.json");
+const products = require("./public/server/products/index.get.json");
 
 app.use(cors());
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + "/public"));
 
 app.get("/", function (req, res) {
-  res.sendfile("index.html");
+  console.log(__dirname, "shgjhasgdjhgasj", __filename);
+  res.render("index.html");
 });
 // app.get("/", (req, res) => {
 //   res.send("Node JS ");
