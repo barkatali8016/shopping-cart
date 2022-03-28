@@ -12,8 +12,7 @@ app.use(cors());
 app.use(express.static(__dirname + "/public"));
 
 app.get("/", function (req, res) {
-  console.log(__dirname, "shgjhasgdjhgasj", __filename);
-  res.render("index.html");
+  // res.render("index.html");
 });
 // app.get("/", (req, res) => {
 //   res.send("Node JS ");
